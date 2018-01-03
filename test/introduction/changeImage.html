@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>change</title>
+</head>
+<body>
+<p>Change</p>
+<p id="content">js 可以修改Html中元素的内容</p>
+
+<img id="image" onclick="change()" src="../../img/lamp_off.png"/>
+
+<p>点击就可改变图片</p>
+
+
+<script>
+    function change() {
+        element = document.getElementById("image");
+        if (element.src.match("lamp_off")) {
+            element.src = "../img/lamp_on.png";
+        } else {
+            element.src = "../img/lamp_off.png";
+        }
+    }
+</script>
+
+</body>
+</html>

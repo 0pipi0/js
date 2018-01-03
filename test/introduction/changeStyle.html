@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>change</title>
+</head>
+<body>
+<p>Change</p>
+<p id="content">js 可以修改Html中元素的属性</p>
+
+
+<button type="button" onclick="changeStyle()">点击就可改变属性</button>
+
+
+<script>
+    function changeStyle() {
+        x = document.getElementById("content");
+        x.style.color = "#ff0000";
+    }
+</script>
+
+</body>
+</html>

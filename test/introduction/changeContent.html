@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>change</title>
+</head>
+<body>
+<p>Change</p>
+<p id="content">js 可以修改Html中元素的内容</p>
+
+
+<button type="button" onclick="changeContent()">点击就可改变内容</button>
+
+
+<script>
+    function changeContent() {
+        x = document.getElementById("content");
+        x.innerHTML = "js 可以修改Html中元素的内容,使用js添加内容";
+    }
+</script>
+
+</body>
+</html>
